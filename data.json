@@ -1,0 +1,95 @@
+{
+  "pets": [
+    {
+      "id": 1,
+      "name": "Joe",
+      "species": "Dog",
+      "sex": "Male",
+      "breed": "French Bulldog",
+      "age": "7",
+      "isAdopted": false,
+      "owner": "",
+      "backstory": "Joe's previous owner unfortunately passed away so is looking for a new owner to provide him a forever home",
+      "likes": "Enjoys running on the beach",
+      "image": "/images/frenchBulldog.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Kola",
+      "species": "Dog",
+      "sex": "Female",
+      "breed": "Mixed Breed",
+      "age": "3",
+      "isAdopted": false,
+      "owner": "",
+      "backstory": "Kola was found abandoned but has lots of energy which she wants share with a new owner",
+      "likes": "Enjoys playing fetch",
+      "image": "/images/mixedBreed.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Stella",
+      "species": "Dog",
+      "sex": "Female",
+      "breed": "Labrador",
+      "age": "11",
+      "isAdopted": true,
+      "owner": "Charlotte A",
+      "backstory": "Stella is an ex service-dog that requires a new home now that she is older",
+      "likes": "Enjoys sleeping and belly rubs",
+      "image": "/images/labrador.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Ladybug",
+      "species": "Cat",
+      "sex": "Female",
+      "breed": "Domestic short hair",
+      "age": "4",
+      "isAdopted": false,
+      "owner": "",
+      "backstory": "Ladybug was a stray kitten when found and has been waiting some time for someone to adopt her",
+      "likes": "Enjoys having her fur groomed",
+      "image": "/images/ladyBug.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Mr Fluffy",
+      "species": "Cat",
+      "sex": "Male",
+      "breed": "Maine Coon",
+      "age": "5",
+      "isAdopted": false,
+      "owner": "",
+      "backstory": "Mr Fluffy became too big for his owner to take care of and now is looking for a new home",
+      "likes": "Enjoys having a good stretch",
+      "image": "/images/mrFluffy.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Henrietta",
+      "species": "Chicken",
+      "sex": "Female",
+      "breed": "Leghorn",
+      "age": "2",
+      "isAdopted": false,
+      "owner": "",
+      "backstory": "Henrietta was on her own for most of her life and is looking to join a new flock ",
+      "likes": "Enjoys hanging out on her chicken swing",
+      "image": "/images/chicken.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Rocket",
+      "species": "Cow",
+      "sex": "Female",
+      "breed": "Highland",
+      "age": "12",
+      "isAdopted": false,
+      "owner": "",
+      "backstory": "Rocket is looking for a new paddock as her old one was sold to build houses on",
+      "likes": "Enjoys having scratches behind her ears",
+      "image": "/images/cow.jpg"
+    }
+  ]
+}
