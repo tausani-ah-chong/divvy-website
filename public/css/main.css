@@ -1,0 +1,36 @@
+body {
+  background-color: #393bb6;
+  font-family: 'Merriweather', serif;
+  color: white;
+  text-align: center;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.dload-btn {
+  background-color: #ff7758;
+  color: white;
+  margin: 5% 3% 5% 0;
+}
+
+/* Nav */
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.nav-item {
+  padding: 0 20px;
+}
+
+.navbar {
+  padding: 0 0 4rem;
+}
+
+.main-pic {
+  width: 100%;
+  top: 3rem;
+}
