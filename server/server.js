@@ -1,6 +1,6 @@
 const path = require('path')
 const express = require('express')
-const routes = require('./routes')
+// const routes = require('./routes')
 
 const server = express()
 
