@@ -3,7 +3,7 @@ import React from 'react'
 function Nav () {
   return (
     <nav className='navbar navbar-expand-lg navbar-dark'>
-      <a className='navbar-brand' >divvy.</a>
+      <a className='navbar-brand' href='#'>divvy.</a>
       <button className='navbar-toggler' data-toggle='collapse' data-target='#navbarSupportedContent' ari-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
         <span className='navbar-toggler-icon'></span>
       </button>

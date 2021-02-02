@@ -35,6 +35,10 @@ body {
   top: 3rem;
 }
 
+.navbar-brand:hover {
+  opacity: 0.5;
+}
+
 /* @media all and (max-width: 320px) {
   .mainTitle {
     font-size: 1rem;
