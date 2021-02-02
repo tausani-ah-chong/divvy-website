@@ -1,6 +1,6 @@
 body {
   background-color: #393bb6;
-  font-family: 'Merriweather', serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: white;
   text-align: center;
 }
@@ -35,7 +35,7 @@ body {
   top: 3rem;
 }
 
-@media all and (max-width: 320px) {
+/* @media all and (max-width: 320px) {
   .mainTitle {
     font-size: 1rem;
   }
@@ -63,4 +63,4 @@ body {
   .mainTitle {
     font-size: 4rem;
   }
-}
+} */

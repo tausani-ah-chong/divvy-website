@@ -1,28 +1,68 @@
 {
-  "name": "my-budget",
-  "version": "1.0.0",
+  "name": "divvy",
+  "version": "1.5.0",
   "description": "Budgeting App",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon index",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tausani-ah-chong/myBudget.git"
   },
-  "keywords": [],
-  "author": "",
+  "main": "server/index.js",
+  "author": "Tausani Ah Chong",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tausani-ah-chong/myBudget/issues"
   },
   "homepage": "https://github.com/tausani-ah-chong/myBudget#readme",
+  "scripts": {
+    "client": "webpack serve --config ./client/webpack.config.js --hot",
+    "dev": "run-p dev:client dev:server",
+    "dev:client": "npm run webpack -- --watch",
+    "dev:server": "nodemon server",
+    "start": "node server",
+    "build": "npm run webpack",
+    "server": "node server",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "webpack": "webpack --config ./client/webpack.config.js",
+    "lint": "eslint --ext .js,.jsx ."
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "eda",
+    "ignorePatterns": [
+      "bundle.js"
+    ]
+  },
   "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^5.2.0"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "eslint": "7.9.0",
+    "eslint-config-eda": "0.1.4",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
