@@ -7,6 +7,7 @@ body {
 
 .container-fluid {
   padding: 3% 15% 7%;
+  justify-content: center;
 }
 
 .dload-btn {
@@ -32,11 +33,14 @@ body {
 
 .main-pic {
   width: 100%;
-  top: 3rem;
 }
 
 .navbar-brand:hover {
   opacity: 0.5;
+}
+
+.image-div {
+  
 }
 
 /* @media all and (max-width: 320px) {
