@@ -22,13 +22,13 @@ function Nav () {
             </a>
           </li>
           <li className='nav-item'>
-            <a className='nav-link' href=''>
+            <a className='nav-link' href='/'>
               Download
             </a>
           </li>
           <li>
-            <a href="" className='btn nav-btn'>
-              Log in
+            <a href="/" className='btn nav-btn'>
+              Login
             </a>
           </li>
         </ul>
