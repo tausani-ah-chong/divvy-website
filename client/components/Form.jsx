@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Form () {
+
   return (
     <>
       <div>
@@ -17,7 +18,7 @@ function Form () {
               <label htmlFor="expenses" className='form-label'>Expenses</label>
               <input type='text' name='expenses' id='expenses' className='form-control'/>
             </div>
-            <a href='/' className='btn dload-btn'>Submit</a>
+            <a href='/' type='submit' className='btn dload-btn'>Submit</a>
           </form>
         </div>
       </div>
