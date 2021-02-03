@@ -16,6 +16,11 @@ body {
   margin: 5% 3% 5% 0;
 }
 
+.nav-btn {
+  background-color: #ff7758;
+  color: white;
+}
+
 /* Nav */
 .navbar-brand {
   font-size: 2rem;

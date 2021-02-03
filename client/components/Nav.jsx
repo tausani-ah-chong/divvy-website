@@ -12,18 +12,23 @@ function Nav () {
       <div className='collapse navbar-collapse' style={{ justifyContent: 'flex-end' }} id='navbarSupportedContent'>
         <ul className='navbar-nav ml-auto d-flex'>
           <li className='nav-item'>
-            <a className='nav-link active' href='/'>
+            <a className='nav-link' href='/'>
               Home
             </a>
           </li>
           <li className='nav-item'>
-            <a className='nav-link active' href='#/form'>
+            <a className='nav-link' href='#/form'>
               Enter Budget
             </a>
           </li>
           <li className='nav-item'>
-            <a className='nav-link active' href=''>
+            <a className='nav-link' href=''>
               Download
+            </a>
+          </li>
+          <li>
+            <a href="" className='btn nav-btn'>
+              Log in
             </a>
           </li>
         </ul>
