@@ -10,6 +10,10 @@ function Form () {
         <div style={{ margin: '3rem', width: '30%', textAlign: 'left' }} >
           <form>
             <div className='mb-3'>
+              <label htmlFor='name' className='form-label'>Name</label>
+              <input type='text' name='name' id='name' className='form-control'/>
+            </div>
+            <div className='mb-3'>
               <label htmlFor='income' className='form-label'>Income</label>
               <input type='text' name='income' id='income' className='form-control'/>
             </div>
