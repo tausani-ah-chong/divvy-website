@@ -1,38 +1,35 @@
 import React, { useState, useEffect } from 'react'
-import request from 'superagent'
+import getApi from '../api'
 
-const greenMsg = 'You are in the green!'
-const redMsg = "Don't worry too much, we got some tools to help you out!"
-
-const serverURL = 'http://localhost:3000/api/v1/budgets'
+// const greenMsg = 'You are in the green!'
+// const redMsg = "Don't worry too much, we got some tools to help you out!"
 
 function Result (props) {
   const [results, setResult] = useState([])
 
   useEffect(() => {
-    request.get(serverURL)
-      .then(res => {
-        console.log(res.body)
-        setResult(res.body)
+    getApi()
+      .then((res) => {
+        setResult(res)
         return null
       })
-      .catch(err => err)
+      .catch(err => console.error(err.message))
   }, [])
 
   return (
     <div>
-      <h2>Results:</h2>
+      <h1>Results</h1>
       <div style={{ margin: '3rem' }}>
         <ul style={{ display: 'flex', justifyContent: 'space-evenly' }}>
           {
             results.map(x => {
               return (
                 <div key={x.id}>
-                  <h3>Name</h3>
+                  <h4>Name</h4>
                   <p>{x.name}</p>
-                  <h3>Income</h3>
+                  <h4>Income</h4>
                   <p>${x.income}</p>
-                  <h3>Expenses</h3>
+                  <h4>Expenses</h4>
                   <p>${x.expenses}</p>
                 </div>
               )
