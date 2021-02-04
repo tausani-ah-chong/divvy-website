@@ -11,8 +11,8 @@ function App () {
     <div className='container-fluid'>
       <Route path='/' component={Nav} />
       <Route exact path='/' component={Home} />
-      <Route exact path='/form' component={Form} />
-      <Route exact path='/result' component={Result} />
+      <Route path='/form' component={Form} />
+      <Route path='/result' component={Result} />
     </div>
   )
 }

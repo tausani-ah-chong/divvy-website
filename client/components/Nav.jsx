@@ -22,8 +22,8 @@ function Nav () {
             </a>
           </li>
           <li className='nav-item'>
-            <a className='nav-link' href='/'>
-              Download
+            <a className='nav-link' href='#/result'>
+              Results
             </a>
           </li>
           <li>

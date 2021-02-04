@@ -8,6 +8,8 @@ module.exports = {
   getAllBudgets,
   getBudget,
   saveBudget
+  // updateBudget,
+  // delBudget
 }
 
 function getAllBudgets () {
@@ -23,3 +25,15 @@ function saveBudget (result) {
   budgets.push(result)
   return Promise.resolve(budgets)
 }
+
+// Come back and edit update & delete functions
+
+// function updateBudget (newData) {
+//   const { id, name, income, expenses } = newData
+//   const result = budgets.find(i => i.id === id)
+// }
+
+// function delBudget (id) {
+//   const newResult = budgets.filter(i => i.id !== id)
+//   return Promise.resolve(newResult)
+// }
