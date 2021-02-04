@@ -18,9 +18,9 @@ function Result (props) {
 
   return (
     <div>
-      <h1>Results</h1>
       <div style={{ margin: '3rem' }}>
-        <ul style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+        <h1>Results</h1>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
           {
             results.map(x => {
               return (
@@ -35,7 +35,7 @@ function Result (props) {
               )
             })
           }
-        </ul>
+        </div>
       </div>
     </div>
   )
