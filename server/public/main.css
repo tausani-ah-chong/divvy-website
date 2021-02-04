@@ -7,12 +7,30 @@ body {
 
 .container-fluid {
   padding: 3% 15% 7%;
+  justify-content: center;
 }
 
 .dload-btn {
   background-color: #ff7758;
   color: white;
   margin: 5% 3% 5% 0;
+}
+
+.nav-btn {
+  background-color: #ff7758;
+  color: white;
+}
+
+.nav-btn:hover {
+  background-color: #ff7758;
+  color: white;
+  opacity: 0.8;
+}
+
+.dload-btn:hover {
+  background-color: #ff7758;
+  color: white;
+  opacity: 0.8;
 }
 
 /* Nav */
@@ -32,35 +50,8 @@ body {
 
 .main-pic {
   width: 100%;
-  top: 3rem;
 }
 
-/* @media all and (max-width: 320px) {
-  .mainTitle {
-    font-size: 1rem;
-  }
-  
-  .dload-btn {
-    font-size: small;
-  }
-
-  .img-div {
-    padding: 0;
-  }
-} 
-
-@media screen and (min-width: 768px) {
-  .img-div {
-    padding: 20px;
-  }
-} 
-
-@media screen and (min-width: 1200px) {
-  .title-div {
-    padding: 20px;
-  }
-
-  .mainTitle {
-    font-size: 4rem;
-  }
-} */
+.navbar-brand:hover {
+  opacity: 0.7;
+}
