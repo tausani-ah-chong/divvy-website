@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import getApi from '../api'
+import { getBudgets } from '../api'
 
 // const greenMsg = 'You are in the green!'
 // const redMsg = "Don't worry too much, we got some tools to help you out!"
@@ -8,7 +8,7 @@ function Result (props) {
   const [results, setResult] = useState([])
 
   useEffect(() => {
-    getApi()
+    getBudgets()
       .then((res) => {
         setResult(res)
         return null

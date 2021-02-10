@@ -1,6 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { addBudgets } from '../api'
 
 function Form () {
+  const initialState = {
+    name: '',
+    income: 0,
+    expenses: 0
+  }
+
+  const [form, setForm] = useState(initialState)
+
+  // finish sending data to api function
+  function clickHandler () {
+    addBudgets(form)
+  }
+
+  function onChange (e) {
+    const { name, value } = e.target
+    setForm({ ...form, [name]: value })
+  }
+
   return (
     <>
       <div>
@@ -11,17 +30,17 @@ function Form () {
           <form>
             <div className='mb-3'>
               <label htmlFor='name' className='form-label'>Name</label>
-              <input type='text' name='name' id='name' className='form-control'/>
+              <input type='text' name='name' id='name' value={form.name} onChange={onChange} className='form-control'/>
             </div>
             <div className='mb-3'>
               <label htmlFor='income' className='form-label'>Income</label>
-              <input type='text' name='income' id='income' className='form-control'/>
+              <input type='number' name='income' id='income' value={form.income} onChange={onChange} className='form-control'/>
             </div>
             <div className='mb-3'>
               <label htmlFor="expenses" className='form-label'>Expenses</label>
-              <input type='text' name='expenses' id='expenses' className='form-control'/>
+              <input type='number' name='expenses' id='expenses' value={form.expenses} onChange={onChange} className='form-control'/>
             </div>
-            <a href='/' type='submit' className='btn dload-btn'>Submit</a>
+            <a onClick={clickHandler} href='#/result' className='btn dload-btn'>Submit</a>
           </form>
         </div>
       </div>
