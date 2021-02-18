@@ -2,7 +2,7 @@ const express = require('express')
 
 const routes = express.Router()
 
-const db = require('../db')
+const db = require('../db/db')
 
 routes.get('/', (req, res) => {
   db.getAllBudgets()
