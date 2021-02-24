@@ -1,29 +1,31 @@
-const budgets = [
-  { id: 1, name: 'James', income: '750', expenses: '500' },
-  { id: 2, name: 'Isoa', income: '1000', expenses: '600' },
-  { id: 3, name: 'Ben', income: '500', expenses: '300' }
-]
+const connection = require('./connection')
 
 module.exports = {
   getAllBudgets,
-  getBudget,
+  getBudgetById,
   saveBudget
   // updateBudget,
   // delBudget
 }
 
-function getAllBudgets () {
-  return Promise.resolve(budgets)
+function getAllBudgets (db = connection) {
+  return db('budgets')
+    .select()
 }
 
-function getBudget (id) {
-  const result = budgets.find(i => i.id === id)
-  return Promise.resolve({ ...result })
+function getBudgetById (id, db = connection) {
+  return db('budgets')
+    .where('id', id)
+    .select()
 }
 
-function saveBudget (result) {
-  budgets.push(result)
-  return Promise.resolve(budgets)
+function saveBudget (result, db = connection) {
+  return db('budgets')
+    .insert({
+      name: result.name,
+      income: result.income,
+      expenses: result.expenses
+    })
 }
 
 // Come back and edit update & delete functions
