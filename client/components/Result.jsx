@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { getBudgets } from '../api'
+import { connect } from 'react-redux'
+import { setBudgets } from '../actions/budgets'
 
 // const greenMsg = 'You are in the green!'
 // const redMsg = "Don't worry too much, we got some tools to help you out!"
 
-function Result (props) {
-  const [results, setResult] = useState([])
-
+function Result ({ budgets, dispatch }) {
   useEffect(() => {
     getBudgets()
-      .then((res) => {
-        setResult(res)
+      .then((results) => {
+        dispatch(setBudgets(results))
         return null
       })
       .catch(err => console.error(err.message))
@@ -22,7 +22,7 @@ function Result (props) {
         <h1>Results</h1>
         <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
           {
-            results.map(x => {
+            budgets.map(x => {
               return (
                 <div key={x.id}>
                   <h4>Name</h4>
@@ -41,4 +41,10 @@ function Result (props) {
   )
 }
 
-export default Result
+function mapStateToProps (state) {
+  return {
+    budgets: state.budgets
+  }
+}
+
+export default connect(mapStateToProps)(Result)
